@@ -1,0 +1,4 @@
+{
+   "horse_age":"12",
+   "horse_weather":"1",
+}
