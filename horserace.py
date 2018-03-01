@@ -1,3 +1,6 @@
+import os
+os.system('cls' if os.name == 'nt' else 'clear') ## this clears the cmd so all you see is main menu
+
 current_race = "race"
 
 print "Welcome to Horse Race!" 
@@ -15,4 +18,4 @@ print "3. To Refresh race"
 print "4. To view horses"
 print "5. To exit" 
 
-
+user_input = raw_input("Enter a menu number:")
