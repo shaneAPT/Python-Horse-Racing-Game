@@ -19,3 +19,6 @@ print "4. To view horses"
 print "5. To exit" 
 
 user_input = raw_input("Enter a menu number:")
+
+if user_input == "2":
+	os.system("python racing_screen.py") ## os.system allows you to run a .py
