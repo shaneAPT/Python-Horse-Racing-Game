@@ -1,4 +1,7 @@
 {
    "horse_age":"4",
    "horse_weather":"0",
+   "jockey_age":"24",
+   "horse_consistency":"1",
+   "horse_jumping":"0",
 }
