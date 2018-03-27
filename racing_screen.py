@@ -4,7 +4,7 @@ import random
 from generate_horse_speed import *
 
 i = 0
-race_length = 70
+race_length = 40
 leading_horse = 0
 horse1_active_pos = 0 ## horse active positions are declared here so += is able to work
 horse2_active_pos = 0
@@ -42,3 +42,6 @@ while leading_horse < race_length:
 		os.system('cls' if os.name == 'nt' else 'clear')
 
 print "!!! WINNER:", leading_horse_name, "!!!"
+
+time.sleep(5)
+os.system("python horserace.py") ## returns to main menu after 5 seconds

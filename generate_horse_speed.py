@@ -1,9 +1,10 @@
-track1_stats = eval(open("tracks/track1_stats.txt").read())
+import random
+
 horses = ["horse1", "horse2", "horse3"]
+tracks = ["track1", "track2", "track3"]
+current_track_stats = eval(open("tracks/"+tracks[random.randint(0,len(tracks)-1)]+"_stats.txt").read())
 
-## tracks ##
-
-for key, value in track1_stats.iteritems():
+for key, value in current_track_stats.iteritems():
 	if key == "track_age":
 		track1_stats_age = value
 	if key == "track_weather":
@@ -32,4 +33,6 @@ def generate_horse_speed():
 			temp_horse_speed = temp_horse_speed * 0.9
 		horse_generated_speeds[horses[j]] = temp_horse_speed
 		j += 1
+
+
 	return horse_generated_speeds

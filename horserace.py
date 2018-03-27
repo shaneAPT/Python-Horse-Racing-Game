@@ -12,11 +12,11 @@ print "horse, horse[odds]"
 print "horse, horse[odds]"
 print (20 * '=')
 print "Press:"
-print "1. To place bet"
-print "2. To start race"
-print "3. To Refresh race"
-print "4. To view horses"
-print "5. To exit" 
+print "1. Place bet"
+print "2. Start race"
+print "3. Refresh race"
+print "4. View horses"
+print "5. Exit game" 
 
 user_input = raw_input("Enter a menu number:")
 
