@@ -1,5 +1,4 @@
 import os
-from generate_horse_speed import *
 from generate_race import *
 os.system('cls' if os.name == 'nt' else 'clear') ## this clears the cmd so all you see is main menu
 
@@ -7,8 +6,6 @@ current_race = "race"
 active_horses = generate_current_horses()
 horse_odds = generate_odds()
 horse_speeds = generate_horse_speed() ## speeds are generated this once and stored in a txt afterwards
-print horse_odds
-print horse_speeds
 
 print "Welcome to Horse Race!" 
 print (20 * '=')
@@ -29,3 +26,6 @@ user_input = raw_input("Enter a menu number:")
 
 if user_input == "2":
 	os.system("python racing_screen.py") ## os.system allows you to run a .py
+
+if user_input == "3":
+	os.system("python horserace.py")
