@@ -4,7 +4,17 @@ import math
 active_horses = []
 horses = ["horse1", "horse2", "horse3", "horse4", "horse5"]
 tracks = ["track1", "track2", "track3"]
-current_track_stats = eval(open("tracks/"+tracks[random.randint(0,len(tracks)-1)]+"_stats.txt").read())
+
+current_track = tracks[random.randint(0,len(tracks)-1)]
+current_track_stats = eval(open("tracks/"+current_track+"_stats.txt").read())
+
+def generate_current_horses():
+	while len(active_horses) < 3:
+		temp_active_horse = "horse"+str(random.randint(1,5))
+		if temp_active_horse not in active_horses: ## needed so the same horse is not running twice in one race
+			active_horses.append(temp_active_horse)
+	return active_horses
+generate_current_horses()
 
 def generate_current_horses():
 	while len(active_horses) < 3:
